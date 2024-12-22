@@ -58,7 +58,7 @@ def recombination(parents):
     return np.asarray(children)[sorted_idx]
 
 
-def run(n, population_size=250, generation=100):
+def run(n, population_size=250, generation=40):
     population = []
     for _ in range(population_size):
         population.append(np.random.randint(0, 2, size=(n, n)))

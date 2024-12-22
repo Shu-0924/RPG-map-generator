@@ -7,13 +7,13 @@ public void settings() {
 }
 
 public void setup() {
-  map = new RPGMap("generate.map");
+  map = new RPGMap("generate10.map");
   avatar = new RPGAvatar(map.x_start, map.y_start);
   view = new RPGView(avatar, map);
   frameRate(10);
   background(0);
   view.draw();
-  save("generated_map.png");
+  save("generated_map_10.png");
 }
 
 public void draw() {
